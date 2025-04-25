@@ -6,6 +6,7 @@
   <title>Antibiotic Guide</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <style>
     body { background-color: #e5e5e5; }
     header { background-color: #333; color: white; padding: 10px; text-align: center; }
@@ -21,6 +22,71 @@
     .ia-table th { background-color: #e0bbf7; }
     .uti-table th { background-color: #f4a261; }
     .table th, .table td { vertical-align: middle; }
+
+    /* make the nav‐tabs scroll on small screens */
+    .nav-tabs.nav-scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .nav-tabs.nav-scroll .nav-item {
+        flex: 0 0 auto;
+      }
+
+      /* slightly smaller text on very small devices */
+    @media (max-width: 576px) {
+        header h1 { font-size: 1.5rem; }
+        .nav-link { font-size: 0.9rem; }
+        .table { font-size: 0.9rem; }
+      }
+
+      /* 1) Responsive font‐sizing using clamp() */
+html {
+    font-size: 100%; /* 16px base */
+  }
+  h1 {
+    /* never smaller than 1.5rem, grows with viewport up to 2.5rem */
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+  h2 {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+  }
+  p, li, td, th {
+    /* base copy scales down slightly on small screens via body font-size below */
+    line-height: 1.5;
+  }
+  
+  /* 2) Auto‐wrapping table cells */
+  .table td,
+  .table th {
+    white-space: normal;       /* allow line‐breaks */
+    word-wrap: break-word;     /* break long words/URLs */
+  }
+  
+  /* 3) Make sure tables always fill available width */
+  .table {
+    width: 100% !important;
+    table-layout: auto;        /* let columns size naturally */
+  }
+  
+  /* 4) Responsive containers */
+  .container, .container-fluid {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* 5) Adjust base font‐size at breakpoints */
+  @media (max-width: 768px) {
+    body {
+      font-size: 0.95rem;
+    }
+  }
+  @media (max-width: 576px) {
+    body {
+      font-size: 0.9rem;
+    }
+  }
   </style>
 </head>
 <body>
@@ -30,7 +96,7 @@
 
   <!-- Top Tabs -->
   <nav class="container mt-3">
-    <ul class="nav nav-tabs justify-content-center">
+    <ul class="nav nav-tabs nav-scroll justify-content-start">
         <li class="nav-item"><button class="nav-link active" onclick="showSection('bacteria')">Bacterial/Fungal Coverage</button></li>
         <li class="nav-item"><button class="nav-link" onclick="showSection('pneumoniaBF')">Pneumonia Biofire</button></li>
       <li class="nav-item"><button class="nav-link" onclick="showSection('gi')">GI Biofire</button></li>
