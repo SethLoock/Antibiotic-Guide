@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloodstream infections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand-mark">IH</div>
+      <div class="brand-text">
+        <div class="brand-name">INTEGRIS Health</div>
+        <div class="brand-subtitle">Antimicrobial Guide</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="outer-wrapper">
+    <div class="page-container">
+      <button class="back-button" onclick="goHome()">
+        ← Back to Home
+      </button>
+
+      <h1 class="page-title">Bloodstream infections</h1>
+      <p class="page-subtitle">
+        Select the organism cluster identified in the blood culture.
+      </p>
+
+      <!-- Gram-negative bacilli -->
+      <button class="menu-button"
+        onclick="goTo('bsi-ecoli-klebsiella-proteus.html')">
+        E. coli / Klebsiella pneumoniae / Klebsiella oxytoca / Proteus species
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-enterobacter-citrobacter.html')">
+        Enterobacter species / Citrobacter species
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-pseudomonas.html')">
+        Pseudomonas aeruginosa
+      </button>
+
+      <!-- Gram-positive cocci -->
+      <button class="menu-button"
+        onclick="goTo('bsi-staph-aureus.html')">
+        Staphylococcus aureus
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-staph-lugdunensis.html')">
+        Staphylococcus lugdunensis
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-staph-coagneg.html')">
+        Staphylococcus epidermidis / Staphylococcus species
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-strep-anginosus.html')">
+        Streptococcus agalactiae / anginosus / pyogenes
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-strep-pneumoniae.html')">
+        Streptococcus pneumoniae
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-enterococcus-faecalis.html')">
+        Enterococcus faecalis
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-enterococcus-faecium.html')">
+        Enterococcus faecium
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('bsi-listeria.html')">
+        Listeria species
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
