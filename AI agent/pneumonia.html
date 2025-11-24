@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pneumonia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand-mark">OS</div>
+      <div class="brand-text">
+        <div class="brand-name">OnlineSteward</div>
+        <div class="brand-subtitle">Antimicrobial Guide</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="outer-wrapper">
+    <div class="page-container">
+      <button class="back-button" onclick="goHome()">
+        ← Back to Home
+      </button>
+
+      <h1 class="page-title">Pneumonia</h1>
+      <p class="page-subtitle">Select the clinical scenario:</p>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-nonsevere-communityacquired.html')">
+        Non-severe Community Acquired Pneumonia (CAP)
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-severecap.html')">
+        Severe Community-acquired pneumonia
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-priorMRSA.html')">
+        Pneumoniae with prior MRSA isolation within the past 90 days
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-priorPSA.html')">
+        Pneumoniae with prior Pseudomonas isolation within the past 90 days, Cystic Fibrosis, or Bronchiectasis
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-acuteaspirationofgastriccontents.html')">
+        Acute aspiration of gastric contents. "Aspiration Pneumonitis"
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-aspiration.html')">
+        Aspiration pneumonia
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-aspirationanerobic.html')">
+        Aspiration pneumonia with anerobic risk
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-HAPVAP.html')">
+        Hospital Acquired Pneumonia (HAP), Ventilator Associated Pneumonia (VAP)
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('pneumonia-HAPVAP-hxabxuse.html')">
+        HAP/VAP with IV antibiotic use in the previous 90 days, treatment in unit where MRSA prevalence is not known or >20%, or MRSA isolation within past 90 days 
+      </button>
+
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
