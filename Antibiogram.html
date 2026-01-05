@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antibiogram</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand-mark">OS</div>
+      <div class="brand-text">
+        <div class="brand-name">OnlineSteward</div>
+        <div class="brand-subtitle">Antimicrobial Guide</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="outer-wrapper">
+    <div class="page-container">
+      <button class="back-button" onclick="goHome()">
+        ← Back to Home
+      </button>
+
+      <h1 class="page-title">Antibiogram</h1>
+      <p class="page-subtitle">Select source of infection</p>
+
+      <button class="menu-button"
+        onclick="goTo('BMC_urine.html')">
+        Urinary Source 
+      </button>
+
+      <button class="menu-button"
+        onclick="goTo('BMC_nonurine.html')">
+        Non-Urinary Source
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
